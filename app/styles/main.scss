@@ -47,8 +47,8 @@ h3 { font-size: 4rem; text-align: center; }
 a {
   color: white;
   text-shadow: 0px 0px 5px darken($basepurple, 10%);
-  text-decoration: underline; 
-  
+  text-decoration: underline;
+
   &:hover {
     color: lighten($basepurple, 50%);
     text-decoration: none;
@@ -82,9 +82,9 @@ a {
   background: white;
   height: 100%;
   width: 100%;
-  
+
   z-index: 999999;
-  
+
   #skip-video {
     color: lighten(black, 80%);
     font-size: 20px;
@@ -94,17 +94,17 @@ a {
     text-align: center;
     transition: color ease 0.2s;
     cursor: pointer;
-    
+
     &:hover {
       color: inherit;
     }
   }
-  
+
   .v-center {
     display: table-cell;
     vertical-align: middle;
   }
-  
+
   video {
     width: 100%;
     max-width: 1280px;
@@ -117,7 +117,7 @@ header {
   background: url(images/purple-nu-landscape.png) no-repeat;
   background-size: contain;
   background-position: bottom center;
-  
+
   padding-bottom: 300px;
 
   color: white;
@@ -129,11 +129,11 @@ header {
     margin: 0 auto;
     margin-top: 50px;
   }
-  
+
   h1 {
     font-family: Muli, sans-serif;
     font-style: italic;
-    
+
     &:nth-of-type(2) {
       margin-top: -25px;
     }
@@ -160,27 +160,27 @@ header {
 }
 
 section {
-  
+
   @extend .container-fluid;
-  
+
   padding: 50px 0;
-  
+
   &:nth-of-type(even) {
     background-color: $basepurple;
     color: white;
   }
-  
+
   h1,h2,h3,p {
     @extend .container;
   }
-  
+
   &.appprocess {
     background: url(../images/appprocessbg2.jpg) $basepurple;
     background-size: cover;
     background-position: center center;
     min-height: 668px;
   }
-  
+
   &.tracks {
     .track {
       @extend .container;
@@ -193,31 +193,31 @@ section {
         @extend .col-xs-2;
         margin: 45px 0;
         font-size: 3.5rem;
-        
+
         &.fa-leaf {
           color: #00b300;
         }
-        
+
         &.fa-group {
           color: #3a3ac1;
         }
-        
+
         &.fa-heart {
           color: #d63c3c;
         }
-        
+
         &.fa-briefcase {
           color: #7c2020;
         }
-        
+
         &.fa-flask {
           color: #ef9010;
         }
       }
     }
-    
+
   }
-  
+
   &.highlights {
     .past-winners {
       max-width: 1200px;
@@ -230,16 +230,16 @@ section {
         display: table-cell;
         vertical-align: middle;
       }
-      
+
       img {
         display: block;
         margin: 0 auto;
         max-width: 100%
       }
     }
-    
+
   }
-  
+
   &.sponsors {
     .sponsor-logos {
       max-width: 1200px;
@@ -248,7 +248,7 @@ section {
     .sponsor {
       height: 200px;
       display: inline-table;
-      
+
       .v-center {
         display: table-cell;
         vertical-align: middle;
@@ -261,14 +261,14 @@ section {
       margin: 0 auto;
     }
   }
-  
+
   &.contact {
     background: url(images/purple-nu-landscape.png) no-repeat;
     background-size: contain;
     background-position: bottom center;
-    
+
     padding-bottom: 300px;
-    
+
     #contact-form {
       @extend .container;
 
@@ -295,7 +295,7 @@ section {
   @extend .col-sm-4;
   text-align: center;
   padding: 5px;
-  
+
   small {
     @extend .col-xs-12;
     font-size: 3rem;
@@ -308,7 +308,7 @@ section {
   margin: 10px auto;
   cursor: pointer;
   color: $basepurple;
-  
+
   &:hover {
     text-decoration: underline;
   }

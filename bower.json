@@ -2,7 +2,11 @@
   "name": "nuvc-2014",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.3.1"
+    "bootstrap-sass-official": "~3.3.1",
+    "smooth-scroll": "~1.0.1",
+    "jquery-waypoints": "~3.1.1",
+    "waypoints": "~3.1.1",
+    "jquery-cookie": "~1.4.1"
   },
   "devDependencies": {
     "animate.css": "~3.2.0",

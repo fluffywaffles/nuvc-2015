@@ -1,4 +1,5 @@
 /* jshint devel:true */
+
 $('#video-overlay video').hover(function() {
   'use strict';
   $(this).attr('controls', 'controls');
@@ -6,6 +7,14 @@ $('#video-overlay video').hover(function() {
   'use strict';
   $(this).removeAttr('controls');
 });
+
+if ($.cookie('nuvc-skip-video')) {
+  $('#video-overlay').fadeOut()
+                     .find('video')[0]
+                     .pause();
+} else {
+  $.cookie('nuvc-skip-video', 'true', { expires: 300 });
+}
 
 $('#video-overlay video').on('ended', function() {
   'use strict';
@@ -34,7 +43,23 @@ $('#contact-form input[type="button"]').click(function() {
     }, 1500);
 });
 
-$('.question h3').click(function() {
+$('.question h4').click(function() {
   'use strict';
   $(this).next().toggleClass('active');
+});
+
+var w = new Waypoint({
+  element: $('#about')[0],
+  handler: function(direction) {
+    console.log(direction);
+    if (direction == 'down') {
+      console.log('sticky nav');
+      $('nav').addClass('top-fixed').animate({ top: 0 });
+    }
+    else {
+      $('nav').animate({top: -60 }, 'fast', function() {
+        $('nav').removeClass('top-fixed').removeAttr('style');
+      })
+    }
+  }
 });

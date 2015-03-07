@@ -57,7 +57,7 @@ var w = new Waypoint({
       $('nav').addClass('top-fixed').animate({ top: 0 });
     }
     else {
-      $('nav').animate({top: -60 }, 'fast', function() {
+      $('nav').animate({opacity: 0 }, 'fast', function() {
         $('nav').removeClass('top-fixed').removeAttr('style');
       })
     }

@@ -311,12 +311,14 @@ section {
   }
 
   &.highlights {
+    h3 {
+      margin-top: 225px;
+    }
     .past-winners {
       max-width: 1200px;
       margin: 0 auto;
     }
     .past-winner {
-      height: 250px;
       display: inline-table;
             .v-center {
         display: table-cell;
@@ -355,7 +357,7 @@ section {
   }
 
   &.contact {
-    padding-bottom: 300px;
+    background: white;
 
     #contact-form {
       @extend .container;
@@ -413,18 +415,6 @@ section {
 .question p.active {
   max-height: 1000px;
   opacity: 1;
-}
-
-
-@media all and (max-width: 768px) {
-  header {
-    h1 { font-size: 4rem; }
-    h2 { font-size: 3rem; }
-  }
-  h1 { font-size: 5.5rem; }
-  h2 { font-size: 4.5rem; }
-  h3 { font-size: 3.5rem; }
-  p  { font-size: 1.4rem; }
 }
 
 li.active {

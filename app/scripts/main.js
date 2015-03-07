@@ -8,11 +8,11 @@ $('#video-overlay video').hover(function() {
   $(this).removeAttr('controls');
 });
 
-if ($.cookie('nuvc-skip-video')) {
-  $('#video-overlay').fadeOut()
+if (!$.cookie('nuvc-skip-video')) {
+  $('#video-overlay').fadeIn()
                      .find('video')[0]
-                     .pause();
-} else {
+                     .play();
+
   $.cookie('nuvc-skip-video', 'true', { expires: 300 });
 }
 
@@ -49,12 +49,12 @@ $('.question h4').click(function() {
 });
 
 var w = new Waypoint({
-  element: $('#about')[0],
+  element: $('#top')[0],
   handler: function(direction) {
     console.log(direction);
     if (direction == 'down') {
       console.log('sticky nav');
-      $('nav').addClass('top-fixed').animate({ top: 0 });
+      $('nav').addClass('top-fixed');
     }
     else {
       $('nav').animate({opacity: 0 }, 'fast', function() {
@@ -62,4 +62,37 @@ var w = new Waypoint({
       })
     }
   }
+});
+
+[].forEach.call(document.querySelectorAll('nav li'), function(el) {
+  new Waypoint({
+    element: document.getElementById($(el).find('a')[0].href.split('#')[1]),
+    handler: function (direction) {
+      direction === 'down'
+        ? ($('nav li').removeClass('active'), $(el).addClass('active'))
+        : ($('nav li').removeClass('active'), $(el).prev().addClass('active'))
+    }
+  });
+});
+
+new Waypoint({
+  element: $('h1')[0],
+  handler: function (direction) {
+    direction == 'down'
+      ? $('nav').css({top: 0, right: 0 }).addClass('extend')
+      : $('nav').removeAttr('style').removeClass('extend');
+  }
+});
+
+$('nav .hamburger').click(function(e) {
+  $('nav').toggleClass('open');
+  e.stopPropagation();
+  $('nav li').click(function() {
+    $('nav').removeClass('open');
+    $('nav li').off('click');
+  });
+  $('body').click(function() {
+    $('nav').removeClass('open');
+    $('body').off('click');
+  });
 });

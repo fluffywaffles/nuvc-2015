@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
   </head>
-  <body>
+  <body id='top'>
 
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -21,43 +23,58 @@
     <div id='video-overlay'>
       <div class='v-center'>
         <div id='skip-video'>Skip Video</div>
-        <video preload='auto' poster='images/NUVC-logo.png' autoplay>
+        <video preload='auto'>
           <!-- 1280x720 video file -->
           <source src='videos/teaser.mov' type='video/mp4'>
         </video>
       </div>
     </div>
 
-    <div class="fixed-top notification">
-      <span>Hello to our newest sponsors, FieldGlass and New Day!</span>
-    </div>
+    <nav>
+      <ul>
+        <li><a href='#top'>Home</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#apply'>Apply</a></li>
+        <li><a href="#tracks">Tracks</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href='javascript:void(0)'>
+        <i class='hamburger fa fa-bars'></i>
+      </a>
+    </nav>
 
-    <header>
-      <img src='images/NUVC-logo.png' class='logo'>
-      <h1 class='purple'>Northwestern University</h1>
-      <h1 class='purple'>Venture Challenge</h1>
-      <h2>Where ideas will become real.</h2>
+     <header>
+      <h1>Where ideas will become real.</h1>
+      <h4>Northwestern University Venture Challenge</h4>
     </header>
 
-    <section class='about'>
-      <h1> What is NUVC? </h1>
-      <p>Every successful entrepreneur has an awesome pitch, and here&#8217;s ours: we&#8217;re offering university students the chance to become part of the fastest-growing, most innovative entrepreneurship competition in the country. At Northwestern, we see opportunity where others see impossibility. For NUVC 2015 we&#8217;re looking to raise the stakes like never before, showcasing top talent, unique visions and outstanding creativity from promising students.</p>
-
-      <h3 style='font-size: 3rem'> We have only one question: </h3>
-      <h2 class='purple'>  Will you take the Challenge? </h2>
+    <section class='about' id='about'>
+      <h2> What is NU Venture Challenge? </h2>
+      <p> As Northwestern’s premier business pitch competition, NUVC challenges you to build the future. We reward the most innovative and promising student startups with capital and mentorship so your ideas will become real, grow, and make an impact. Where others see impossibility, you see opportunity - that is what we celebrate.</p>
 
       <p>Join us on Thursday, June 4th, 2015 to be a part of the most innovative and exciting NUVC yet.</p>
 
-      <p>Like us on Facebook to be among the first to learn about new updates regarding NUVC.</p>
+      <p><a href='https://www.facebook.com/northwesternventurechallenge'>Like us on Facebook</a> to be among the first to learn about new updates regarding NUVC.</p>
     </section>
-    <section class='appprocess'>
+    <section class='appprocess' id='apply'>
       <h2> Application Process </h2>
-      <p>Teams interested in competing in NUVC will need to submit an executive summary outlining their startup proposal. Competitors will be judged in the preliminary round based on the quality of the business model, sustainability, market opportunities, and finances. Teams advancing to the semi-finals will have a ten-minute presentation followed by a ten-minute question and answer period during which judges can ask questions, and in the finals round will need to prepare a ten-minute presentation followed by a shortened five-minute question and answer period.</p>
+      <p>Teams will need to submit an executive summary outlining their startup
+        proposal.</p>
+      <p><b>Step 1.</b> Register an  individual profile at <a href='http://istart.org/'>iStart</a> (Note: This should be completed by one team leader)<br><b>Step 2.</b> Apply at <a href='http://nuvc2015.istart.org'>nuvc2015.istart.org</a> for the executive summary round.</p>
 
-      <p>Applications will open in March 2015.</p>
+      <p>In the preliminary round, competitors will be judged on:</p>
+      <ul>
+        <li>Market opportunity</li>
+        <li>Financial viability</li>
+        <li>Growth potential</li>
+        <li>Professionalism</li>
+      </ul>
+      <p>Teams advancing to the semi-finals will give a ten-minute presentation followed by a ten-minute Q&amp;A session with judges. In the finals round, teams will give a ten-minute presentation followed by a five-minute Q&amp;A session.</p>
     </section>
-    <section class='tracks'>
-      <h2>TRACKS</h2>
+    <section class='tracks' id='tracks'>
+      <h2>Tracks</h2>
 
       <div class='track transparent'>
         <h3>Green Energy + Sustainability</h3>
@@ -86,10 +103,10 @@
     </section>
     <section class='highlights'>
       <h1 class='highlight'>
-        $175k <small>in prizes</small>
+        $200k <small>in prizes</small>
       </h1>
       <h1 class='highlight'>
-        65 <small>teams</small>
+        25 <small>teams</small>
       </h1>
       <h1 class='highlight'>
         5 <small>tracks</small>
@@ -118,27 +135,27 @@
         </div>
       </div>
     </section>
-    <section class='faq'>
+    <section class='faq' id='faq'>
       <h2>F.A.Q.</h2>
       <div class='question'>
-        <h3>Who can compete?</h3>
+        <h4>Who can compete?</h4>
         <p>This competition is open to anyone with at least one Northwestern undergraduate or graduate student with a primary role within the startup. </p>
       </div>
       <div class='question'>
-        <h3>Can I still enter the competition if I have already received outside funding?</h3>
+        <h4>Can I still enter the competition if I have already received outside funding?</h4>
         <p>Yes, but you must report all monetary amounts you have earned. This includes any additional funding you may have gotten after you have submitted your application.</p>
       </div>
       <div class='question'>
-        <h3>Can I be a part of more than one team?</h3>
+        <h4>Can I be a part of more than one team?</h4>
         <p>Yes, you can be a part of more than one team.</p>
       </div>
     </section>
-    <section class='sponsors-info'>
-      <h2>SPONSORS</h2>
+    <section class='sponsors-info' id='sponsors'>
+      <h2>Sponsors</h2>
       <p>If you are a business interested in partnering with NUVC, let us know! Sponsorship benefits include publicity, mentorship opportunities, and more. Most importantly, you will get to be a part of the fastest growing business pitch competition. <a href='#contact-form'>Contact us</a> as soon as possible so we can give you more information about how you can get involved.</p>
     </section>
     <section class='sponsors'>
-      <h2>THANK YOU TO OUR 2015 NUVC SPONSORS</h2>
+      <h2>Thank you to our 2015 NUVC sponsors</h2>
       <div class='sponsor-logos'>
         <div class='col-sm-6 col-xs-12 sponsor'>
           <div class='v-center'>
@@ -164,11 +181,12 @@
           <div class='v-center'>
             <img src='http://nuisepic.com/nuventurechallenge/images/fieldglass.jpg'>
           </div>
+
         </div>
       </div>
     </section>
-    <section class='contact'>
-      <h2>CONTACT US</h2>
+    <section class='contact' id='contact'>
+      <h2 class='purple'>Contact Us</h2>
 
       <form id='contact-form'>
         <div class='form-group'>
@@ -186,8 +204,6 @@
       </form>
     </section>
 
-    <footer></footer>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -201,6 +217,10 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/smooth-scroll/smooth-scroll.js"></script>
+    <script src="../bower_components/jquery-waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="../bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="../bower_components/jquery-cookie/jquery.cookie.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

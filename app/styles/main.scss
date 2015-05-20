@@ -263,11 +263,17 @@ section {
     @extend .container;
   }
 
-  &.appprocess {
+  &.schedule {
     background: url(../images/appprocessbg2.jpg) $basepurple;
     background-size: cover;
     background-position: center center;
     min-height: 668px;
+
+    table {
+      font-size: 150%;
+      text-align: center;
+      width: 50%;
+    }
   }
 
   &.tracks {
@@ -302,6 +308,24 @@ section {
         &.fa-flask {
           color: #ef9010;
         }
+      }
+
+    }
+
+    ul {
+      margin-left: 10%;
+      display: block;
+
+      li {
+        font-size: 120%;
+        display: inline;
+        margin-left: 15px;
+        padding-right: 15px;
+        border-right: 1px solid black;
+      }
+
+      li:last-child {
+        border: none;
       }
     }
 

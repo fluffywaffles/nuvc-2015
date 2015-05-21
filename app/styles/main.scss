@@ -274,6 +274,39 @@ section {
       text-align: center;
       width: 50%;
     }
+
+    div.speaker-div {
+      overflow: auto;
+      width: 60%;
+      height: 300px;
+      margin-bottom: 20px;
+
+      img.paul {
+        float: left;
+        width: 205px;
+        height: 300px;
+      }
+      
+      img.dick {
+        float: left;
+        width: 250px;
+        height: 300px;
+      }
+
+      div.speaker-info {
+        margin-right: 50px;
+        float: right;
+        height: 100%;
+        width: 60%;
+        padding-top: 0px;
+
+        p {
+          width: 100%;
+          margin-top: -25px;
+          font-size: 150%;
+        }
+      }
+    }
   }
 
   &.tracks {
@@ -364,6 +397,15 @@ section {
     .sponsor {
       height: 200px;
       display: inline-table;
+
+      &.large {
+        height: 300px;
+
+        img {
+          max-width: 500px;
+          max-height: 300px;
+        }
+      }
 
       .v-center {
         display: table-cell;

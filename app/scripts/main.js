@@ -1,4 +1,5 @@
 /* jshint devel:true */
+'use strict';
 
 $('#video-overlay video').hover(function() {
   'use strict';
@@ -52,7 +53,7 @@ var w = new Waypoint({
   element: $('#top')[0],
   handler: function(direction) {
     console.log(direction);
-    if (direction == 'down') {
+    if (direction === 'down') {
       console.log('sticky nav');
       $('nav').addClass('top-fixed');
     }
@@ -78,7 +79,7 @@ var w = new Waypoint({
 new Waypoint({
   element: $('h1')[0],
   handler: function (direction) {
-    direction == 'down'
+    direction === 'down'
       ? $('nav').css({top: 0, right: 0 }).addClass('extend')
       : $('nav').removeAttr('style').removeClass('extend');
   }

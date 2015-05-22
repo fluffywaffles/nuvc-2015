@@ -247,6 +247,21 @@ header {
   }
 }
 
+@media all and (max-width: 990px) {
+  table.table {
+    width: 100% !important;
+  }
+
+  .speaker-div {
+    width: 90% !important;
+
+    .speaker-info {
+      width: 100%;
+    }
+  }
+
+}
+
 section {
 
   @extend .container-fluid;
@@ -309,7 +324,7 @@ section {
         margin-right: 50px;
         float: right;
         height: 100%;
-        width: 60%;
+        width: 50%;
         padding-top: 0px;
 
         p {
@@ -504,6 +519,27 @@ li.active {
     h2 { font-size: 2.5rem; }
     div.front-images {
       display: none;
+    }
+  }
+
+  section.schedule {
+    table {
+      width: 100% !important;
+    }
+  }
+
+  .speaker-div {
+    img {
+      display: none;
+    }
+    div.speaker-info {
+      width: 90% !important;
+    }
+  }
+  
+  section.tracks {
+    ul {
+      margin-left: 0;
     }
   }
 }

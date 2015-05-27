@@ -209,6 +209,12 @@ header {
   h3:nth-of-type(2) {
     margin-top: -25px;
   }
+
+  h1 {
+    a {
+      color: white;
+    }
+  }
 }
 
 @media all and (max-width: 1200px) {
@@ -245,6 +251,21 @@ header {
       display: none;
     }
   }
+}
+
+@media all and (max-width: 990px) {
+  table.table {
+    width: 100% !important;
+  }
+
+  .speaker-div {
+    width: 90% !important;
+
+    .speaker-info {
+      width: 100%;
+    }
+  }
+
 }
 
 section {
@@ -309,7 +330,7 @@ section {
         margin-right: 50px;
         float: right;
         height: 100%;
-        width: 60%;
+        width: 50%;
         padding-top: 0px;
 
         p {
@@ -427,8 +448,7 @@ section {
     }
     img {
       display: block;
-      max-width: 250px;
-      max-height: 200px;
+      max-width: 900px;
       margin: 0 auto;
     }
   }
@@ -504,6 +524,44 @@ li.active {
     h2 { font-size: 2.5rem; }
     div.front-images {
       display: none;
+    }
+  }
+
+  section.schedule {
+    table {
+      width: 100% !important;
+    }
+  }
+
+  .speaker-div {
+    img {
+      display: none;
+    }
+    div.speaker-info {
+      width: 90% !important;
+    }
+  }
+
+  section.sponsors {
+    img {
+      position: absolute;
+      left: -150px;
+    }
+    
+  }
+  
+  section.tracks {
+    ul {
+      margin-left: 0;
+    }
+  }
+}
+
+@media all and (max-width: 350px) {
+  section.sponsors {
+    img {
+      position: absolute;
+      left: -300px;
     }
   }
 }

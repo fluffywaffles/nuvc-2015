@@ -352,7 +352,7 @@ section {
       }
       i {
         @extend .col-xs-2;
-        margin: 45px 0;
+        margin: 45px 0 0 0;
         font-size: 3.5rem;
 
         &.fa-leaf {
@@ -379,8 +379,11 @@ section {
     }
 
     ul {
-      margin-left: 10%;
+      @extend .col-xs-12;
       display: block;
+      padding: 0;
+      width: 100%;
+      margin-bottom: 50px;
 
       li {
         font-size: 120%;

@@ -187,6 +187,12 @@ section.about {
   p:first-child {
     text-align: left;
   }
+
+  div.table-div {
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 1.5rem;
+  }
 }
 
 header {
@@ -308,6 +314,32 @@ section {
       width: 50%;
     }
 
+    div.track-list {
+      @extend .container;
+
+      ul {
+        list-style-type: none;
+        width: 27%;
+
+        li {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    p.apply-online {
+      text-align: center;
+    }
+
+    div.who-can-apply {
+      p {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1.2rem;
+      }
+    }
+
     div.speaker-div {
       overflow: auto;
       width: 60%;
@@ -319,7 +351,7 @@ section {
         width: 205px;
         height: 300px;
       }
-      
+
       img.dick {
         float: left;
         width: 250px;
@@ -447,7 +479,7 @@ section {
         display: table-cell;
         vertical-align: middle;
       }
-    
+
     }
     img {
       display: block;
@@ -550,9 +582,9 @@ li.active {
       position: absolute;
       left: -150px;
     }
-    
+
   }
-  
+
   section.tracks {
     ul {
       margin-left: 0;

@@ -59,7 +59,7 @@ a {
   text-decoration: underline;
 
   &:hover {
-    color: lighten($basepurple, 50%);
+    color: #FFC520;
     text-decoration: none;
   }
 
@@ -296,7 +296,7 @@ section {
     a {
       color: white;
       &:hover {
-        color: lighten($basepurple, 50%);
+        color: #FFC520;
       }
     }
   }
@@ -559,8 +559,8 @@ section {
   opacity: 1;
 }
 
-li.active {
-  background: transparentize(lighten($basepurple, 20%), 0.2);
+li.active a {
+  color: #FFC520;
 }
 
 @media all and (max-width: 768px) {

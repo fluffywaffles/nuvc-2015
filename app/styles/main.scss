@@ -195,11 +195,19 @@ section.about {
   }
 }
 
+img.corner-logo {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
 header {
   // background: url(../images/hero-banner-1-new.png);
   background: url(../images/SP16_NUVC_websiteBG-2.png);
   background-size: cover;
-  background-position: center center;;
+  background-position: center center;
   height: 100%;
   padding: 30vh 25px;
 

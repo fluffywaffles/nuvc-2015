@@ -7,6 +7,16 @@ $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/boots
 // Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Muli:400,400italic|Yanone+Kaffeesatz:300,400|Lato:300,400|Quicksand:400,700);
 
+@font-face{
+  font-family: AkkuratPro-Regular;
+  src: url(../fonts/AkkuratPro-Regular.otf);
+}
+
+@font-face{
+  font-family: Campton-ExtraBold;
+  src: url(../fonts/Campton-ExtraBold.otf);
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -21,11 +31,11 @@ html, body {
   font-size: 13px;
   margin: 0;
   height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'AkkuratPro-regular', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Quicksand',  sans-serif;
+  font-family: 'AkkuratPro-regular',  sans-serif;
   margin: 30px 0;
 }
 

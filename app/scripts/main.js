@@ -85,7 +85,7 @@ new Waypoint({
   }
 });
 
-$('nav .hamburger').click(function(e) {
+$('.hamburger').click(function(e) {
   $('nav').toggleClass('open');
   e.stopPropagation();
   $('nav li').click(function() {
